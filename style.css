@@ -1,0 +1,158 @@
+/* .div{
+    display: grid;
+    grid-column: 1/-1;
+    gap: 20px;
+    grid-template-rows: 1fr;
+    justify-items: start; 
+} */
+
+.main-nav{
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0;
+}
+
+li{
+    padding: 20px;
+}
+
+body{
+    margin: auto 0;
+    font-family: Arial;
+}
+
+.push{
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 600px){
+    .main-nav{
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+
+}
+
+.grid-wrapper{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box > img{
+    width: 100%;
+}
+
+.box{
+    background-color: #444;
+    padding: 130px;
+    margin: 20px;
+}
+
+.footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 90px;
+    background-color: #D0DAEE;
+  }
+
+.cover{
+    width: 118rem;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.zone {
+    /* padding:30px 50px;
+    margin:40px 60px; */
+    cursor:pointer;
+    /* display:inline-block; */
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+/* .zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.box:hover {
+    -webkit-transform:rotate(-7deg);
+    -moz-transform:rotate(-7deg);
+    -o-transform:rotate(-7deg);
+    transform:rotate(-7deg);
+} */
+
+.blue{
+    background: white; 
+    color: #034370;
+}
+
+.btn{
+    font-weight: 700;
+    border-radius: 300px;
+    text-transform: uppercase;
+  }
+  
+  .btn-primary{
+    background-color: #F05F44;
+    border-color: #F05F44;
+  }
+  
+  /* .btn-primary:hover{
+    background-color: #ee4b08;
+      border-color: #ee4b08;
+      border-width: 4px;
+  }
+  
+  .btn-xl{
+    padding: 1rem 2rem
+  
+  } */
+
+  a {
+    color: #011C48;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#footer > .inner > *.narrow {
+    width: 15%;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.innerinner {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.inner{
+    flex-wrap: wrap;
+}
