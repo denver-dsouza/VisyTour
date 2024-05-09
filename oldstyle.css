@@ -1,0 +1,280 @@
+html, body{
+    height: 100%;
+    margin: 0;
+   /* display: flex;
+   flex-direction: column; */
+
+}
+
+body > .div {
+        flex: 1;
+
+}
+
+
+
+
+a:link { 
+    text-decoration: none; 
+  } 
+  a:visited { 
+    text-decoration: none; 
+  } 
+  a:hover { 
+    text-decoration: none; 
+  } 
+  a:active { 
+    text-decoration: none; 
+  }
+
+
+.main-nav{
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0;
+    font-family: Nunito;
+}
+
+li{
+    padding: 20px;
+}
+
+
+
+.push{
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 600px){
+    .main-nav{
+        font-size: 0.5em;
+        padding: 0;
+        font-family: Nunito;
+    }
+    .main-nav{
+        font-size: 0.5em;
+        padding: 0;
+        font-family: Nunito;
+    }
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+
+}
+
+/* .grid-wrapper{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+} */
+
+/* .box > img{
+    width: 100%;
+} */
+
+.box{
+    background-color: #444;
+    padding: 130px;
+    margin: 20px;
+}
+ 
+
+.cover{
+    width: 15000rem;
+    height: 300 rem;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.zone {
+    /* padding:30px 50px;
+    margin:40px 60px; */
+    cursor:pointer;
+    /* display:inline-block; */
+    color:#FFF;
+    font-size:2em;
+    transition: all 0.3s linear;
+    font-family: Nunito;
+}
+
+
+.blue{
+    background: white; 
+    color: #034370;
+}
+
+.btn{
+    font-family: Nunito;
+    font-weight: 700;
+    border-radius: 300px;
+    text-transform: uppercase;
+  }
+  
+  .btn-primary{
+    background-color: #F05F44;
+    border-color: #F05F44;
+  }
+  
+  /* .btn-primary:hover{
+    background-color: #ee4b08;
+      border-color: #ee4b08;
+      border-width: 4px;
+  }
+  
+  .btn-xl{
+    padding: 1rem 2rem
+  
+  } */
+
+
+
+ul {
+    list-style-type: none;
+}
+
+
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.innerinner {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.inner{
+    flex-wrap: wrap;
+}
+
+.footer {
+    /* position:fixed;
+    bottom:0;
+    left:0;
+    width:100%; */
+    /* height: 90px;
+    background-color: #D0DAEE;
+	overflow: hidden;
+
+    font: 'Open Sans', sans-serif;
+
+    color: #fff;
+
+    font-size: 14px;
+
+    font-weight: normal;
+
+    line-height: 26px; */ */
+    position:fixed;
+    bottom:0;
+    left:0;
+    display: flex;          /* Use flexbox to lay out the footer items */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    text-align: center;      /* Center text elements */
+    flex-direction: row;  /* Stack children vertically */
+    gap: 20px;               /* Optional: adds space between the children */
+    padding: 100px;           /* Optional: adds padding inside the footer */
+    font-family: Nunito;
+    margin-top: auto;
+}
+
+
+
+.wrap {
+
+	background: #3E3E3E;
+
+	margin: 0 auto;
+
+	position: relative;
+
+	overflow: hidden;
+
+}
+
+.clear {
+
+    clear: both;
+
+}
+
+
+
+.left {
+
+    text-align: left;
+
+    float: left;
+
+    width: 33%;
+
+    padding: 20px;
+
+    font-family: Nunito;
+
+}
+
+
+
+.right {
+
+    float: right;
+
+    text-align: left;
+
+    font-family: Nunito;
+
+    color: #fff;
+
+    font-size: 14px;
+}
+
+.body{
+    margin: auto 0;
+    font-family: Nunito;
+    font-optical-sizing: auto;
+    font-weight: 1px;
+    font-style: normal;
+}
+
+.links-left {
+    width: 100%;             /* Make each links div take the full width */
+    display: flex;           /* Use flexbox to lay out the content inside */
+    flex-direction: column;  /* Stack content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: left;     /* Align items in the center vertically */
+    font-family: Nunito;
+    bottom: 0;
+    left: 0;
+  }
+
+  .links-center {
+    width: 100%;             /* Make each links div take the full width */
+    display: flex;           /* Use flexbox to lay out the content inside */
+    flex-direction: column;  /* Stack content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center;     /* Align items in the center vertically */
+    font-family: Nunito;
+  }
+
+  .links-right {
+    width: 100%;             /* Make each links div take the full width */
+    display: flex;           /* Use flexbox to lay out the content inside */
+    flex-direction: column;  /* Stack content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center;     /* Align items in the center vertically */
+    font-family: Nunito;
+  }
+
