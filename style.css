@@ -114,6 +114,14 @@ h5{
     align-items: center;
 }
 
+h6{
+    font: 'Nunito';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 20px; 
+    color: #034370;
+    align-items: center;
+}
 p{
     font: 'Nunito';
     font-size: 45px;
@@ -204,4 +212,13 @@ p{
     padding: 100px;           /* Optional: adds padding inside the footer */
     font-family: Nunito;
     flex-shrink: 0;
+  }
+
+  .container{
+    background-color: #FFFFFF;
+    display: flex;  
+    align-items: center; 
+    flex-direction: row;
+    width: 100%;
+    height: auto;
   }
