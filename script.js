@@ -2,8 +2,8 @@ const signupButton = document.getElementById('signupButton');
 const loginButton = document.getElementById('loginButton');
 const signupPopup = document.getElementById('signupPopup');
 const loginPopup = document.getElementById('loginPopup');
-const signupCloseButton = document.getElementById('signupCloseButton');
-const loginCloseButton = document.getElementById('loginCloseButton');
+const signupCloseButton = document.querySelector('#signupPopup .popup-close-button');
+const loginCloseButton = document.querySelector('#loginPopup .popup-close-button');
 const signupSubmit = document.getElementById('signupSubmit');
 const loginSubmit = document.getElementById('loginSubmit');
 const signupEmailInput = document.getElementById('signupEmail');
@@ -21,12 +21,29 @@ loginButton.addEventListener('click', () => {
     loginPopup.classList.remove('hidden');
 });
 
-signupCloseButton.addEventListener('click', () => {
+// signupCloseButton.addEventListener('click', () => {
+//     signupPopup.classList.add('hidden');
+// });
+
+// loginCloseButton.addEventListener('click', () => {
+//     loginPopup.classList.add('hidden');
+// });
+
+const closePopups = () => {
     signupPopup.classList.add('hidden');
+    loginPopup.classList.add('hidden');
+};
+
+document.querySelectorAll('.popup-container').forEach(popup => {
+    popup.addEventListener('click', event => {
+        if (event.target === popup) {
+            closePopups();
+        }
+    });
 });
 
-loginCloseButton.addEventListener('click', () => {
-    loginPopup.classList.add('hidden');
+document.querySelectorAll('.popup-close-button').forEach(button => {
+    button.addEventListener('click', closePopups);
 });
 
 signupSubmit.addEventListener('click', () => {
