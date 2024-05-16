@@ -214,7 +214,7 @@ p{
     flex-shrink: 0;
   }
 
-  .container{
+  .container1 {
     background-color: #FFFFFF;
     display: flex;  
     align-items: center; 
@@ -245,4 +245,8 @@ p{
 
 .hidden {
     display: none;
+}
+
+.padding{
+    padding-left: 77px;
 }
