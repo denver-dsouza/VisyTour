@@ -252,3 +252,10 @@ p{
 .padding1 {
     padding-left: 77px;
 }
+
+.vacation-vibe{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
