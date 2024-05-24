@@ -12,6 +12,10 @@
      <script src="https://kit.fontawesome.com/63dea489fa.js" crossorigin="anonymous"></script>
      <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.13/index.global.min.js'></script>
      <script src='./script2.js'> </script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> 
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -113,11 +117,30 @@
      </script>
 
     <div>
-        <h3><br><br><br>When do you want to make this trip?</h2>
+        <h3><br><br><br>When do you want to make this trip?</h3>
     </div>
-    <div id="calendar"></div>
-        <!-- <img src="./img/Calendar Placeholder.png" alt="Calendar"> -->
-  </div>
+
+<div>
+  <input type="text" id="daterange" name="daterange" value="06/01/2024 - 06/15/2024" width="400px" />
+<script>
+$(function() {
+  $('input[name="daterange"]').daterangepicker({
+    "opens": 'center',
+    "showDropdowns": true,
+    "drops": "down",
+    "alwaysShowCalendars": true,
+    "minDate": "05/23/2024",
+    "autoApply": true,
+  }, function(start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});
+</script>
+<h2><br><br><br><br></h2>
+</div>
+    <!-- <div id="calendar"></div>
+<img src="./img/Calendar Placeholder.png" alt="Calendar"> -->
+  <!-- </div> --> 
 
   <div class="second-seg">
     <div>

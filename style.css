@@ -259,3 +259,9 @@ p{
     justify-content: center;
     align-items: center;
 }
+
+/* #daterange {
+    position: fixed;
+    transform: scale(1.3); /* Or however big you want it */
+    transform-origin: 0 0;
+  } */
