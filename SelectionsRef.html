@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: 'Nunito';
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	line-height: 1;
+	height: 100%;
+	font: 'Nunito';
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 22px;
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	position: relative;
+	width: 100%;
+}
+ol,
+ul,
+/* a {
+	list-style: none;
+	text-decoration: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+},
+mb-4{
+    padding-bottom:5px;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.push {
+	margin-left: auto;
+}
+
+.btn-space {
+	margin-left: 10px;
+	margin-bottom: 15px;
+} */
+
+/* h1 {
+	font: 'Nunito';
+	font-size: 300px;
+	font-weight: 800;
+	/* line-height: 409.2px; */
+	/* color: #ffffff;
+	align-items: center; */
+/* } */ */
+
+/* h2 {
+	font: 'Nunito';
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 81.84px;
+	color: #000000;
+	align-items: center;
+} */
+
+/* h3 {
+	font: 'Nunito';
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 37px;
+	color: #6e6464;
+	align-items: center;
+} */
+
+h4 {
+	font: 'Nunito';
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 22px;
+	color: #011c49;
+	align-items: center;
+}
+
+h5 {
+	font: 'Nunito';
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #034370;
+	align-items: center;
+}
+
+h6 {
+	font: 'Nunito';
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #034370;
+	align-items: center;
+}
+/* p {
+	font: 'Nunito';
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 61.38px;
+	color: #ffffff;
+	align-items: center;
+	opacity: 43%;
+	text-indent: 1000px;
+} */
+
+.btn {
+	font-family: 'Nunito';
+	background-color: #034370;
+	color: #ffffff;
+	font-weight: bold;
+	border-radius: 25px;
+	width: 216px;
+	height: 38px;
+	
+}
+
+.card-img-top-alt {
+	width: 100%;
+	height: 46vw;
+	object-fit: cover;
+}
+
+.second-seg {
+	background-color: #ffffff;
+	color: #000000;
+	width: 100%; /* Make each links div take the full width */
+	display: flex; /* Use flexbox to lay out the content inside */
+	flex-direction: column; /* Stack content vertically */
+	justify-content: center; /* Center content horizontally */
+	align-items: center; /* Align items in the center vertically */
+	font-family: Nunito;
+}
+
+.links-left {
+	width: 100%; /* Make each links div take the full width */
+	display: flex; /* Use flexbox to lay out the content inside */
+	flex-direction: column; /* Stack content vertically */
+	justify-content: center; /* Center content horizontally */
+	align-items: left; /* Align items in the center vertically */
+	font-family: Nunito;
+	bottom: 0;
+	left: 0;
+}
+
+.links-center {
+	width: 100%; /* Make each links div take the full width */
+	display: flex; /* Use flexbox to lay out the content inside */
+	flex-direction: column; /* Stack content vertically */
+	justify-content: center; /* Center content horizontally */
+	align-items: center; /* Align items in the center vertically */
+	font-family: Nunito;
+}
+
+.links-right {
+	width: 100%; /* Make each links div take the full width */
+	display: flex; /* Use flexbox to lay out the content inside */
+	flex-direction: column; /* Stack content vertically */
+	justify-content: center; /* Center content horizontally */
+	align-items: center; /* Align items in the center vertically */
+	font-family: Nunito;
+	margin-right: 1 em;
+}
+
+.socialz,
+.icons-right {
+	display: flex; /* Use flexbox to lay out the content inside */
+	flex-direction: row; /* Stack content vertically */
+	justify-content: center; /* Center content horizontally */
+	align-items: center; /* Align items in the center vertically */
+	font-family: Nunito;
+	padding-right: 3em;
+	padding-left: 15%;
+}
+
+.footer {
+	background-color: #ffffff;
+	position: absolute;
+	height: 50px;
+	margin-top: -50px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex; /* Use flexbox to lay out the footer items */
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	text-align: center; /* Center text elements */
+	flex-direction: row; /* Stack children vertically */
+	gap: 20px; /* Optional: adds space between the children */
+	padding: 100px; /* Optional: adds padding inside the footer */
+	font-family: Nunito;
+	flex-shrink: 0;
+}
+
+.container {
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+	height: auto;
+}
+
+
+/* Recommendations Css */
+
+.NavBar {
+	align-items: center;
+	justify-self: center;
+	display: flex;
+	margin-left: auto;
+}
+
+li1{
+	padding-top:22.5px;
+	}
+
+li2{
+	text-align: justify;
+	width:57px;
+	font-size: 20px;
+	padding-top:22.5px;
+	padding-left: 246.43px;
+height: 27px;
+
+}
+
+li3{
+	width:57px;
+	font-size: 20px;
+	padding-top:22.5px;
+	padding-left: 83px;
+height: 27px;
+}
+
+
+li4{
+	display: inline-block;
+	width:57px;
+	font-size: 20px;
+	padding-top:22.5px;
+	padding-left: 931px;
+height: 27px;
+}
+
+li5{
+	padding-top:22.5px;
+
+}
+
+.ImageWrapper{
+	padding-top:200px ;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 5px;
+  
+	}
+/* .ImageContainer2{
+	background-image: url('./img/unsplash.png');
+	padding-top: 72px;;
+	width: 100%;
+	height: 400px;
+ background-position-y:-300px;
+	/* background-position-x: 0px;  */
+	/* background-size: cover;
+	background-repeat: no-repeat;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+} */ 
+
+
+H1{
+	text-align: center;
+	color:#000000;
+	font-family: 'Nunito';
+	font-weight: 800;
+	font-size: 72px;
+	line-height: 72px;
+	padding-bottom: 115px;
+}
+
+H2{
+	padding-top:50px;
+	text-align: center;
+	color:#000000;
+	font-family: 'Nunito';
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 22px;
+	align-items: center;
+}
+
+H3{
+	text-align: center;
+	color:black;
+	font-family: 'Nunito';
+	font-weight: 600;
+	font-style: italic;
+	font-size: 32px;
+	line-height: 32px;
+	align-items: center;
+}
+
+H4{
+  color:black;
+	font-family: 'Nunito';
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 24px; 
+}
+
+H5{
+  color:black;
+	font-family: 'Nunito';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24.55px;
+  text-align: center;
+}
+
+.searchBar{
+	border-radius: 30px;
+	border: none;
+	align-items: center;
+	justify-content: center;
+	display:flex;
+	text-align: center;
+}
+
+/* .search-container{
+
+} */
+
+input{ 
+	/* Rectangle 2817 */
+position: absolute;
+width: 780px;
+height: 81px;
+left: 474px;
+top: 614px;
+background: #d9d9d9;
+border-radius: 30px;
+
+
+/* text-align: justify; */
+}
+
+.Buttons {
+	font-family: Nunito;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 22px;
+	align-items: center;
+}
+
+.ImageContainer {
+	padding-top: 72px;
+	width: 100%;
+	height: 502px;
+}
+
+.btn1 {
+	font-family: Nunito;
+	background-color: #034370;
+	color: #ffffff;
+	border-radius: 25px;
+	width:266px;
+	height:53px;
+	margin-top:163px;
+	margin-left: 441px;
+
+}
+
+.btn2 {
+	font-family: Nunito;
+	background-color: #034370;
+	color: #ffffff;
+	border-radius: 25px;
+	width:266px;
+	height:53px;
+	margin-top:163px;
+	margin-left: 300px;
+}
+
+/* .ImageWrapper {
+	
+	
+	width: 227px;
+} */
+.row {
+	display: flex;
+	flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+	height: 278.15px;
+}
+.column {
+	flex: 0 0 auto; /* Ensures columns don’t stretch to fill space */
+	margin: 5px; /* Optional: add some margin between columns */
+}
+
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisyTour - Your travel companion in an app!</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+     crossorigin="anonymous">
+     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+     <link rel="stylesheet" type="text/css" href="./style.css">
+     <script src="https://kit.fontawesome.com/63dea489fa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <img src="./img/VisyTour Logo.png" class="img-fluid" alt="VisyTour Logo" height="72px" width="375px">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 push">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact us</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 push">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Sign In<br></a>
+        </li>
+        <button id="ItineraryButton" class="btn btn-outline-success btn-space" type="submit">Create an Itinerary</button>
+      </ul>        
+    </div>
+  </div>
+</nav>
+
+<H2>Just a few more questions, what tickles your fancy?</H2><br>
+<H5>Select all that apply</H5> 
+<div id="Food">
+<H4>Food</H4>
+<style>
+.Food{
+  padding: 291px;;
+} 
+  input[type=text] {
+  background-color: #DDDDDDDD;
+  text-align: center;
+  display:flex;
+  height: 40px;
+  width: 95px;
+  /* padding: 12px 20px; */
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #767676;
+  border-color:#767676;
+  outline: none;
+  border-radius: 24px;
+  }
+  
+  input[type=text]:focus {
+    background-color: #767676;
+  }
+  </style>
+  <form>
+    <input type="text" value="Pizza">
+    <input type="text" value="Steak">
+    <input type="text" value="Seafood">
+    <input type="text" value="Native">
+    <input type="text" value="Vegetarian">
+    <input type="text" value="Wine Bar">
+    <input type="text" value="BBQ/Grill">
+    <input type="text" value="Sushi">
+    <input type="text" value="Chinese">
+    <input type="text" value="African">
+    <input type="text" value="Mexican">
+    <input type="text" value="Indian">
+    <input type="text" value="Asian">
+    <input type="text" value="French">
+  </form>
+</div>
+<div id="Fun">
+<H4>Fun and Shopping</H4>
+<style>
+.Fun{
+  padding-top: 567px;
+} 
+  input[type=text] {
+  background-color: #DDDDDDDD;
+  text-align: center;
+  display:flex;
+  height: 40px;
+  justify-content: space-between;
+  width: 95px;
+  /* padding: 12px 20px; */
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #767676;
+  border-color:#767676;
+  outline: none;
+  border-radius: 24px;
+  }
+  
+  input[type=text]:focus {
+    background-color: #767676;
+  }
+  </style>
+  <form>
+    <input type="text" value="All">
+      <input type="text" value="Winery">
+      <input type="text" value="Spa">
+      <input type="text" value="Beach">
+      <input type="text" value="Amusement Parks">
+      <input type="text" value="Shopping Malls">
+      <input type="text" value="Karaoke">
+      <input type="text" value="Jazz $ Blues Bar">
+      <input type="text" value="Sports">
+      <input type="text" value="Aqaurium & Zoo">
+      <input type="text" value="Outdoor Activities">
+      <input type="text" value="Local Markets">
+      <input type="text" value="Night Clubs">
+      <input type="text" value="Fine Dining">
+    </form>
+  </form>
+</div>
+<div id="Popular">
+<H4>Popular Attractions</H4>
+<style>
+  .Popular{
+    padding-top: 567px;
+  } 
+    input[type=text] {
+    background-color: #DDDDDDDD;
+    text-align: center;
+    display:flex;
+    height: 40px;
+    justify-content: space-between;
+    width: 95px;
+    /* padding: 12px 20px; */
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #767676;
+    border-color:#767676;
+    outline: none;
+    border-radius: 24px;
+    }
+    
+    input[type=text]:focus {
+      background-color: #767676;
+    }
+    </style>
+    <form>
+      <input type="text" value="All">
+      <input type="text" value="Gardens">
+      <input type="text" value="Historical Sites">
+      <input type="text" value="Memorials & Monuments">
+      <input type="text" value="Architechures">
+      <input type="text" value="Museums">
+    </form>
+</div>
+<div id="Describe">
+<H4>Which best describes you?</H4><style>
+  .Describe{
+    padding-top: 567px;
+  } 
+    input[type=text] {
+    background-color: #DDDDDDDD;
+    text-align: center;
+    display:flex;
+    height: 40px;
+    justify-content: space-between;
+    width: 95px;
+    /* padding: 12px 20px; */
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #767676;
+    border-color:#767676;
+    outline: none;
+    border-radius: 24px;
+    }
+    
+    input[type=text]:focus {
+      background-color: #767676;
+    }
+    </style>
+    <form>
+      <input type="text" value="Early Bird">
+      <input type="text" value="Night Owl">
+      
+    </form>
+<H4>Select what works best for you...</H4>
+<input type="text" value="All">
+      <input type="text" value="Visit as many places as possible">
+      <input type="text" value="I like to balance thing out">
+      <input type="text" value="Spend enough time in each location">
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
