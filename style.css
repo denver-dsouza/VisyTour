@@ -221,13 +221,16 @@ h6 {
 } */
 
 .btn {
+	text-align: center;
 	font-family: 'Nunito';
 	background-color: #034370;
 	color: #ffffff;
 	font-weight: bold;
 	border-radius: 25px;
-	width: 216px;
+	width: 100px;
 	height: 38px;
+	margin-bottom: 10px;
+	padding-right: 5px;
 }
 
 .card-img-top-alt {
