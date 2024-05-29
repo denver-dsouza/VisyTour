@@ -13,6 +13,12 @@
      <script src="./script2.js"></script>
 </head>
 <body>
+    <script>
+        function toggleActive(button) {
+            button.classList.toggle('active');
+        }
+    </script>
+    
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <img src="./img/VisyTour Logo.png" class="img-fluid" alt="VisyTour Logo" height="72px" width="375px">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,112 +42,332 @@
 
 <div class="second-seg">
     <div>
-      <h3><br><br><br>Just a few more questions... what tickles your fancy?</h3>
-      <h4><br>Select all that apply<br><br><br></h4>
+      <H2><br><br><br>Just a few more questions... what tickles your fancy?</H2>
+      <H5><br>Select all that apply<br><br><br></H5>
     </div>
     <div>
-        <div>
-            <h3>Food<br><br></h3>
+        <div id="Food">
+            <H4>Food<img src="./img/Meatballs.png">
+            </div><br><br></H4>
         </div>
-            <div>
-                <button type="button" class="btn btn-secondary rounded-pill">Pizza</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Steak</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Seafood</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Native</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Vegetarian</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Wine Bar</button>
-                <button type="button" class="btn btn-secondary rounded-pill">BBQ/Grill</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Sushi</button>
-                <br>
-                <br>
-                <button type="button" class="btn btn-secondary rounded-pill">Chinese</button>
-                <button type="button" class="btn btn-secondary rounded-pill">African</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Mexican</button>
-
-                <button type="button" class="btn btn-secondary rounded-pill">Indian</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Asian</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Sandwich</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Local Dishes</button>
-                <button type="button" class="btn btn-secondary rounded-pill">French</button>
-                <br>
-                <br>
-
-            </div>
     </div>
-    <div>
-        <div>
-            <h3><br><hr>Fun and Shopping<br><br></h3>
-        </div>
-            <div>
-                <button type="button" class="btn btn-secondary rounded-pill">All</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Winery</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Spa</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Beach</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Amusement Parks</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Shopping Malls</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Jazz & Blues Bars</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Sports</button>
+        <br>
+            <div id="Select">
+                <button type="button" class="btn2 btn-secondary pizza" onclick="toggleActive(this)">Pizza</button>
+                <button type="button" class="btn2 btn-secondary steak" onclick="toggleActive(this)">Steak</button>
+                <button type="button" class="btn2 btn-secondary seafood" onclick="toggleActive(this)">Seafood</button>
+                <button type="button" class="btn2 btn-secondary native" onclick="toggleActive(this)">Native</button>
+                <button type="button" class="btn2 btn-secondary vegetarian" onclick="toggleActive(this)">Vegetarian</button>
+                <button type="button" class="btn2 btn-secondary wine" onclick="toggleActive(this)">Wine Bar</button>
+                <button type="button" class="btn2 btn-secondary bbq" onclick="toggleActive(this)">BBQ/Grill</button>
+                <button type="button" class="btn2 btn-secondary sushi" onclick="toggleActive(this)">Sushi</button>
                 <br>
                 <br>
-                <button type="button" class="btn btn-secondary rounded-pill">Aquarium & Zoo</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Outdoor Activities</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Local Markets</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Night Clubs</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Fancy Restaurants</button>
+                <br>
+                <button type="button" class="btn2 btn-secondary chinese" onclick="toggleActive(this)">Chinese</button>
+                <button type="button" class="btn2 btn-secondary african" onclick="toggleActive(this)">African</button>
+                <button type="button" class="btn2 btn-secondary mexican" onclick="toggleActive(this)">Mexican</button>
+                <button type="button" class="btn2 btn-secondary indian" onclick="toggleActive(this)">Indian</button>
+                <button type="button" class="btn2 btn-secondary asian" onclick="toggleActive(this)">Asian</button>
+                <button type="button" class="btn2 btn-secondary sandwich" onclick="toggleActive(this)">Sandwich</button>
+                <button type="button" class="btn2 btn-secondary local" onclick="toggleActive(this)">Local Dishes</button>
+                <button type="button" class="btn2 btn-secondary french" onclick="toggleActive(this)">French</button>
+                <br>
+                <br>
             </div>
     </div>
     <div>
-        <div class="mx-auto">
-            <h3><br><hr>Popular Attractions<br><br></h3>
+            <div id="Fun">
+            <H4><br><hr>Fun and Shopping<img src="./img/Bags.png"><br><br></H4>
+            <br>
         </div>
-            <div>
-                <button type="button" class="btn btn-secondary rounded-pill">All</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Gardens</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Historical Sites</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Antiques</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Memorials & Monuments</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Architectures</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Museums</button>
+        </div>
+        <br>
+            <div id="Select">
+                <button type="button" class="btn2 btn-secondary all" onclick="toggleActive(this)">All</button>
+                <button type="button" class="btn2 btn-secondary winery" onclick="toggleActive(this)">Winery</button>
+                <button type="button" class="btn2 btn-secondary spa" onclick="toggleActive(this)">Spa</button>
+                <button type="button" class="btn2 btn-secondary beach" onclick="toggleActive(this)">Beach</button>
+                <button type="button" class="btn2 btn-secondary amusement" onclick="toggleActive(this)">Amusement Parks</button>
+                <button type="button" class="btn2 btn-secondary shopping" onclick="toggleActive(this)">Shopping Malls</button>
+                <button type="button" class="btn2 btn-secondary jazz" onclick="toggleActive(this)">Jazz & Blues Bars</button>
+                <button type="button" class="btn2 btn-secondary sports" onclick="toggleActive(this)">Sports</button>
+                <br>
+                <br>
+                <br>
+                <button type="button" class="btn2 btn-secondary aquariums" onclick="toggleActive(this)">Aquariums & Zoos</button>
+                <button type="button" class="btn2 btn-secondary outdoor" onclick="toggleActive(this)">Outdoor Activities</button>
+                <button type="button" class="btn2 btn-secondary markets" onclick="toggleActive(this)">Local Markets</button>
+                <button type="button" class="btn2 btn-secondary night" onclick="toggleActive(this)">Night Clubs</button>
+                <button type="button" class="btn2 btn-secondary fine" onclick="toggleActive(this)">Fine Dining</button>
+                <button type="button" class="btn2 btn-secondary karaoke" onclick="toggleActive(this)">Karaoke</button>
+                <br>
             </div>
     </div>
-    <div class="mx-auto">
-        <div>
-            <h3><br><hr>What best describes you?<br><br></h3>
+    <div>
+        <div id="Popular">
+        <H4><br><hr>Popular Attractions<img src="./img/Skyline.png"><br><br></H4>
+        <br>
         </div>
-            <div>
-                <button type="button" class="btn btn-secondary rounded-pill">Early Bird</button>
-                <button type="button" class="btn btn-secondary rounded-pill">Night Owl</button>
+        </div>
+        <br>
+            <div id="Select">
+                <button type="button" class="btn2 btn-secondary all" onclick="toggleActive(this)">All</button>
+                <button type="button" class="btn2 btn-secondary gardens" onclick="toggleActive(this)">Gardens</button>
+                <button type="button" class="btn2 btn-secondary historical" onclick="toggleActive(this)">Historical Sites</button>
+                <button type="button" class="btn2 btn-secondary memorials" onclick="toggleActive(this)">Memorials & Monuments</button>
+                <button type="button" class="btn2 btn-secondary architectures" onclick="toggleActive(this)">Architectures</button>
+                <button type="button" class="btn2 btn-secondary museums" onclick="toggleActive(this)">Museums</button>
+                <br>
             </div>
     </div>
-    <div class="">
+    <div class="describe">
         <div>
-            <h3><br><hr>Select what works best for you...<br><br></h3>
+            <H6><br><hr>What best describes you?<br><br></H6>
         </div>
             <div>
-                <button type="button" class="btn btn-secondary rounded-pill">Visit as many places as possible</button>
+                <button type="button" class="btn3 btn-secondary early" onclick="toggleActive(this)">Early Bird</button>
+                <button type="button" class="btn3 btn-secondary night" onclick="toggleActive(this)">Night Owl</button>
+            </div>
+    
+    <div id="largeButtonContainer">
+        <div id="works">
+            <H6><br><hr>Select what works best for you...<br><br></H6>
+        </div>
+        <div>
+            <div id="selections">
+                <button type="button" class="btn4 btn-secondary visit" onclick="toggleActive(this)">Visit as many places as possible<img src="./img/Exercise.png"></button>
                 <br><br>
-                <button type="button" class="btn btn-secondary rounded-pill">I like to balance things out</button>
+                <button type="button" class="btn4 btn-secondary balance" onclick="toggleActive(this)">I like to balance things out<img src="./img/Holiday.png"></button>
                 <br><br>
-                <button type="button" class="btn btn-secondary rounded-pill">Spend enough time in each location</button>
+                <button type="button" class="btn4 btn-secondary spend" onclick="toggleActive(this)">Spend enough time in each location<img src="./img/Confused.png"></button>
             </div>
+            <div id="LargeImage">
+            <img src="./img/Iphone.png">
+        </div>
     </div>
+        </div>
     <div>
         <div>
-            <h2>One last step, what's your budget?</h2>
-            <h3>What are you willing to spend on the full trip? Include flight and hotel cost.</h3>
+            <H2>One last step, what's your budget?</H2>
+            <br>
+            <H5>What are you willing to spend on the full trip? Include flight and hotel cost.</H5>
         </div>
-        <div class="input-group mx-auto" style="width: 230px;">
+        <br>
+        <div class="search-container">
+            <input class="searchBar"  placeholder="Enter trip budget">
+        </div>
+        <!-- <div class="input-group mx-auto" style="width: 230px;">
                 <span class="input-group-text">$</span>
                 <input type="text" class="textfield" value="" placeholder="Enter trip budget" id="extra7" name="extra7" onkeypress="return isNumber(event)" />
-                <!-- <input type="number" class="form-control" placeholder="Enter trip budget" aria-label="Amount (to the nearest dollar)"> -->
-                <span class="input-group-text"></span>
+                 <input type="number" class="form-control" placeholder="Enter trip budget" aria-label="Amount (to the nearest dollar)"> -->
+                <!-- <span class="input-group-text"></span> -->
         </div>
     </div>
 </div>
 
 <div class="second-seg">
     <div>
+<<<<<<< HEAD
         <a href="./reco.html" class="btn btn-outline-success btn-space push">Back</a>
         <a href="" class="btn btn-outline-success btn-space push">Show me my itinerary</a>
+=======
+        <a href="./reco.html" class="btn5 btn-outline-success btn-space">Back</a>
+        <a href="" class="btn btn-outline-success btn-space">Show me my itinerary</a>
+>>>>>>> main
     </div>
 </body>
+<style>
+    H1{
+	text-align: center;
+	color:#000000;
+	font-family: 'Nunito';
+	font-weight: 800;
+	font-size: 72px;
+	line-height: 72px;
+	padding-bottom: 115px;
+}
+
+H2{
+	padding-top:50px;
+	text-align: center;
+	color:#000000;
+	font-family: 'Nunito';
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 22px;
+	align-items: center;
+}
+    H3{
+	text-align: center;
+	color:black;
+	font-family: 'Nunito';
+	font-weight: 600;
+	font-style: italic;
+	font-size: 32px;
+	line-height: 32px;
+	align-items: center;
+}
+
+H4{
+    text-align:center;
+    color:black;
+	font-family: 'Nunito';
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 24px; 
+}
+
+H5{
+  color: #034370;
+	font-family: 'Nunito';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24.55px;
+  text-align: center;
+}
+
+H6 {
+    text-align:left;
+    color:black;
+	font-family: 'Nunito';
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 24px; 
+}
+
+.selectContainer{
+margin-left:90px;
+}
+
+    .btn{
+        width:216px;
+    }
+    .btn2{
+     background-color: #DDDDDDDD;
+     border-color:#767676;
+     color: black;
+     border-radius:24px;
+     height: 40px;
+     align-items: center;
+     margin-left: 78px;
+     
+    }
+
+    .pizza { width: 86px; }
+    .steak { width: 86px; }
+    .seafood { width: 110px; }
+    .native { width: 90px; }
+    .vegetarian { width: 130px; }
+    .wine { width: 110px; }
+    .bbq { width: 120px; }
+    .sushi { width: 80px; }
+    .chinese { width: 110px; }
+    .african { width: 110px; }
+    .mexican { width: 100px; }
+    .indian { width: 100px; }
+    .asian { width: 90px; }
+    .sandwich { width: 130px; }
+    .local { width: 150px; }
+    .french { width: 100px; }
+    .all { width: 65px; }
+    .winery { width: 90px; }
+    .spa { width: 70px; }
+    .beach { width: 80px; }
+    .amusement { width: 198px; }
+    .shopping { width: 180px; }
+    .jazz { width: 188px; }
+    .sports { width: 90px; }
+    .aquariums { width: 196px; }
+    .outdoor { width: 190px; }
+    .markets { width: 160px; }
+    .night { width: 140px; }
+    .fine { width: 140px; }
+    .karaoke { width: 108px; }
+
+    .btn2.active {
+     background-color: #AAAAAA;
+    }
+
+    .btn3{
+        background-color: #DDDDDDDD;
+        border-color:#767676;
+        color: black;
+        height: 68.2px;
+        border-radius: 24px;
+        margin:10px 0;
+        text-align: center;
+        padding: 10px, 16px, 10px, 16px;
+    }
+
+    .early {width:180.26px}
+    .night {width:200.74px;margin-left: 80px;}
+
+    .visit { width: 491px; }
+    .balance { width: 491px; }
+    .spend { width: 491px; }
+
+.btn3.active{
+    background-color: #AAAAAA;
+}
+
+.smallImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+    .btn4{
+        background-color: #DDDDDDDD;
+        border-color:#767676;
+        color: black;
+        height: 68.2px;
+        border-radius: 24px;
+        align-items: center;
+        padding: 10px, 16px, 10px, 16px;
+    
+    }
+
+.btn4.active{
+    background-color: #AAAAAA;
+}
+
+.searchBar{
+    border-style: solid;
+    border-color: lightgray;
+    color: #FFFFFF;
+	border-radius: 16px;
+    height: 86.05px;
+	border: none;
+	align-items: center;
+	justify-content: center;
+	display:flex;
+	text-align: center;
+    padding-left: 200px;
+}
+
+    .btn5{
+        background-color: white;
+        border-color:#034370;
+        color: black;
+        border-style: solid;
+        border-width:3px;
+        margin-bottom:100px;
+    }
+
+    .Select {
+        font-family: 'Nunito';
+        font-weight: 500;
+        font-size:20px;
+        line-height: 20px;
+        letter-spacing: -2%;
+        text-align: center;
+    }
+</style>
+<script>
+    function toggleActive(button) {
+        button.classList.toggle('active');
+    }
+</script>
+</html>
