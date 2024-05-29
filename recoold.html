@@ -1,0 +1,83 @@
+let imgArray =[
+["./img/Adventure.jpg", "Adventure"],
+["./img/Girls Trip.jpg", "Girls Trip"],
+["./img/Nightlife.jpg", "Night Life"],
+["./img/Relax.jpg","Relax"],
+["./img/Winery.jpg","Winery"],
+["./img/Shopping.jpg","Shopping"],
+["./img/Romance.jpg","Romance"],
+["./img/Sport.jpg","Sport"]
+];
+
+
+for (let i = 0; i < imgArray.length; i++) {
+
+// create a new DIV
+let newDiv = document.createElement("div");
+// newDiv.class="divcell";
+newDiv.setAttribute("id", "divcell");
+
+// let span = document.createElement("span");
+let img = document.createElement("img");
+img.src = imgArray[i][0];
+img.style.width = "276px";
+img.style.height = "221px";
+img.style.margin = "10px";
+img.addEventListener('click', function() {
+// alert("You clicked on image " + img.src);
+if(img.style.border === "2px solid blue"){
+    img.style.border = "none";
+    return;
+}
+img.style.border = "2px solid blue";
+});
+
+newDiv.appendChild(img);
+
+// create a checkbox on top of the image
+let checkbox = document.createElement("input");
+checkbox.type = "checkbox";
+checkbox.style.margin = "5px";
+//position the checkbox on top of the image
+checkbox.style.position = "absolute";
+checkbox.style.top = img.offsetTop + "px";  // get the top position of the image
+checkbox.style.left = img.width + "px"; // get the left position of the image
+
+
+document.getElementById('imgContainer').appendChild(checkbox);
+
+let div = document.createElement("div");
+div.innerHTML = imgArray[i][1];
+div.style.margin = "5px";
+div.style.padding = "5px";
+// document.getElementById('imgContainer').appendChild(div);
+newDiv.appendChild(div);
+document.getElementById('imgContainer').appendChild(newDiv);
+
+if(i % 3 === 0){
+let span = document.createElement("span");
+newDiv.appendChild(span);    
+// insert a new line
+//  console.log("this is working");
+//  document.getElementById('imgContainer').append(document.createElement('br'));
+let br = document.createElement("br");
+newDiv.appendChild(br);
+document.getElementById('imgContainer').appendChild(br);
+}
+// document.getElementById('imgContainer').appendChild(br);
+}
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary mw-100">
+    <img src="./img/VisyTour Logo.png" class="img-fluid" alt="VisyTour Logo" height="72px" width="375px">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact us</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Sign In<br></a>
