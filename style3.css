@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: 'Nunito';
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html{
+    height: 100%;
+    width: 100%; 
+}
+body {
+	line-height: 1;
+    height: 100%;
+    font: 'Nunito';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    position: relative;
+    width: 100%; 
+}
+ol, ul, a {
+	list-style: none;
+    text-decoration: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h2{
+    font: 'Nunito';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20px; 
+    color: #000000;
+    align-items: center;
+    text-align: center; 
+}
+
+h3{
+    font: 'Nunito';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43.65px;
+    color: #000000;
+    align-items: center;
+    text-align: center; 
+}
+
+h4{
+    font: 'Nunito';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.55px; 
+    color: #034370;
+    align-items: center;
+    text-align: center; 
+}
+
+
+
+.selectContainer{
+margin-left:90px;
+}
+
+.btn{
+        width:216px;
+        background-color: #034370;
+        color: #FFFFFF;
+        display: inline flow-root list-item;
+}
+
+.btn2{
+     background-color: #DDDDDDDD;
+     border-color:#767676;
+     color: black;
+     border-radius:24px;
+     height: 40px;
+     align-items: center;
+     margin-left: 78px;
+     
+}
+
+.pizza { width: 86px; }
+.steak { width: 86px; }
+.seafood { width: 110px; }
+.native { width: 90px; }
+.vegetarian { width: 130px; }
+.wine { width: 110px; }
+.bbq { width: 120px; }
+.sushi { width: 80px; }
+.chinese { width: 110px; }
+.african { width: 110px; }
+.mexican { width: 100px; }
+.indian { width: 100px; }
+.asian { width: 90px; }
+.sandwich { width: 130px; }
+.local { width: 150px; }
+.french { width: 100px; }
+.all { width: 65px; }
+.winery { width: 90px; }
+.spa { width: 70px; }
+.beach { width: 80px; }
+.amusement { width: 198px; }
+.shopping { width: 180px; }
+.jazz { width: 188px; }
+.sports { width: 90px; }
+.aquariums { width: 196px; }
+.outdoor { width: 190px; }
+.markets { width: 160px; }
+.night { width: 140px; }
+.fine { width: 140px; }
+.karaoke { width: 108px; }
+
+.btn2.active {
+    background-color: #AAAAAA;
+}
+
+.btn3{
+    background-color: #DDDDDDDD;
+    border-color:#767676;
+    color: black;
+    height: 68.2px;
+    border-radius: 24px;
+    margin:10px 0;
+    text-align: center;
+    padding: 10px, 16px, 10px, 16px;
+}
+
+.early {width:180.26px}
+.night {width:200.74px;margin-left: 80px;}
+
+.visit { width: 491px; }
+.balance { width: 491px; }
+.spend { width: 491px; }
+
+.btn3.active{
+    background-color: #AAAAAA;
+}
+
+.smallImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn4{
+    background-color: #DDDDDDDD;
+    border-color:#767676;
+    color: black;
+    height: 68.2px;
+    border-radius: 24px;
+    align-items: center;
+    padding: 10px, 16px, 10px, 16px;
+
+}
+
+.btn4.active{
+    background-color: #AAAAAA;
+}
+
+.searchBar{
+    border-style: solid;
+    border-color: lightgray;
+    color: #FFFFFF;
+	border-radius: 16px;
+    height: 86.05px;
+	border: none;
+	align-items: center;
+	justify-content: center;
+	display:flex;
+	text-align: center;
+    padding-left: 200px;
+}
+
+.btn5{
+    background-color: white;
+    border-color:#034370;
+    color: black;
+    border-style: solid;
+    border-width:3px;
+    margin-bottom:100px;
+}
+
+.Select {
+    font-family: 'Nunito';
+    font-weight: 500;
+    font-size:20px;
+    line-height: 20px;
+    letter-spacing: -2%;
+    text-align: center;
+}
+
+.nav-link{
+    font: 'Nunito';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27.28px;
+    color: #061A48;
+    align-items: center;
+  }

@@ -124,7 +124,7 @@ body {
 }
 ol,
 ul,
-/* a {
+a {
 	list-style: none;
 	text-decoration: none;
 }
@@ -154,7 +154,7 @@ table {
 .btn-space {
 	margin-left: 10px;
 	margin-bottom: 15px;
-} */
+}
 
 /* h1 {
 	font: 'Nunito';
@@ -330,56 +330,11 @@ h6 {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999;
 
-
-.links-center {
-	width: 100%; /* Make each links div take the full width */
-	display: flex; /* Use flexbox to lay out the content inside */
-	flex-direction: column; /* Stack content vertically */
-	justify-content: center; /* Center content horizontally */
-	align-items: center; /* Align items in the center vertically */
-	font-family: Nunito;
-}
-
-.links-right {
-	width: 100%; /* Make each links div take the full width */
-	display: flex; /* Use flexbox to lay out the content inside */
-	flex-direction: column; /* Stack content vertically */
-	justify-content: center; /* Center content horizontally */
-	align-items: center; /* Align items in the center vertically */
-	font-family: Nunito;
-	margin-right: 1 em;
-}
-
-.socialz,
-.icons-right {
-	display: flex; /* Use flexbox to lay out the content inside */
-	flex-direction: row; /* Stack content vertically */
-	justify-content: center; /* Center content horizontally */
-	align-items: center; /* Align items in the center vertically */
-	font-family: Nunito;
-	padding-right: 3em;
-	padding-left: 15%;
-}
-
-.footer {
-	background-color: #ffffff;
-	position: absolute;
-	height: 50px;
-	margin-top: -50px;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	display: flex; /* Use flexbox to lay out the footer items */
-	justify-content: center; /* Center horizontally */
-	align-items: center; /* Center vertically */
-	text-align: center; /* Center text elements */
-	flex-direction: row; /* Stack children vertically */
-	gap: 20px; /* Optional: adds space between the children */
-	padding: 100px; /* Optional: adds padding inside the footer */
-	font-family: Nunito;
-	flex-shrink: 0;
-}
-
+/* #daterange {
+    position: fixed;
+    transform: scale(1.3); /* Or however big you want it 
+    transform-origin: 0 0;
+  } */
   li, a{
     font: 'Nunito';
     font-size: 20px;
