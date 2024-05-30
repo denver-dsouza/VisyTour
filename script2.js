@@ -6,3 +6,7 @@ function isNumber(evt) {
     }
     return true;
 }
+
+function toggleActive(button) {
+    button.classList.toggle('active');
+}
