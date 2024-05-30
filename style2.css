@@ -42,7 +42,7 @@ body {
     line-height: 22px;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
-    min-height: 100%;
+    min-height: 100vh;
     position: relative;
     width: 100%; 
 }
@@ -115,19 +115,19 @@ p{
 
 .footer{
     background-color: #FFFFFF;
-    position: absolutefixed;
+    position: fixed;
     height: 50px;
     margin-top: -50px;
-    bottom:5;
+    bottom: 5;
     left: 99.5;
     right: 1539.5;
-    display: flex;          /* Use flexbox to lay out the footer items */
-    justify-content: center; /* Center horizontally */
+    display: flex;          /* Use flexbox to lay out the footer items*/
+    justify-content: center; /*Center horizontally */
     align-items: center;     /* Center vertically */
     text-align: center;      /* Center text elements */
-    flex-direction: row;  /* Stack children vertically */
+    flex-direction: row;  /* Stack children horizontally */
     gap: 20px;               /* Optional: adds space between the children */
-    padding: 100px;           /* Optional: adds padding inside the footer */
+    padding: 10px;           /* Optional: adds padding inside the footer */
     font-family: 'Nunito';
     flex-shrink: 0;
     width: 100%;
@@ -135,6 +135,7 @@ p{
     border-bottom: 1px solid #8FC1D4;
     border-left: 1px solid #8FC1D4;
     border-right: 1px solid #8FC1D4;
+    box-sizing: border-box;
   }
 
 .nav-link{
@@ -160,12 +161,23 @@ p{
 #imgContainer {
     height: 100%;
     text-align: center;
-    /* Center text elements */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-content: center;
     gap: 10px 20px;
     width: 100%;
+    /* display: inline-block;
+    position: relative;
+    width: auto; */
+
+}
+.divcell{
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+.divcell img{
+    display: block;
 }
 
 .socialz, .icons-right {
@@ -212,4 +224,8 @@ p{
     background-color: #034370;
     color: #FFFFFF;
     display: inline flow-root list-item;
+}
+
+.content{
+    flex: 1;
 }
