@@ -57,8 +57,8 @@
 <div class="row align-items-center w-100">
   <img src="./img/Progress Bar 1.png" class="img-fluid w-100" alt="Progress Bar"> 
 </div>
-
-<div class="second-seg">
+<div class="content">
+  <div class="second-seg">
     <div>
       <h3><br><br><br>What vacation vibe are you going for?</h3>
       <h4>Select all that apply<br><br><br></h4>
@@ -96,7 +96,7 @@
 
         // create a new DIV
         let newDiv = document.createElement("div");
-        newDiv.class = "divcell";
+        newDiv.className = "divcell";
 
 
         let img = document.createElement("img");
@@ -104,13 +104,13 @@
         img.style.width = "276px";
         img.style.height = "221px";
         img.style.margin = "10px";
-        img.addEventListener('click', function() {
-          if (img.style.border === "2px solid blue") {
-            img.style.border = "none";
-            return;
-          }
-          img.style.border = "2px solid blue";
-        });
+        // img.addEventListener('click', function() {
+        //   if (img.style.border === "2px solid blue") {
+        //     img.style.border = "none";
+        //     return;
+        //   }
+        //   img.style.border = "2px solid blue";
+        // });
 
         newDiv.appendChild(img);
 
@@ -127,12 +127,25 @@
         newDiv.appendChild(div);
         document.getElementById('imgContainer').appendChild(newDiv);
 
+        // create a checkbox on top of the image
+        let checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        // checkbox.style.margin = "5px";
+        //position the checkbox on top of the image
+        checkbox.style.position = "absolute";
+        checkbox.style.top = "20px";  // get the top position of the image
+        checkbox.style.right = "20px"; // get the left position of the image
+        newDiv.append(checkbox);
+        document.getElementById('imgContainer').appendChild(newDiv);
+
 }
      </script>
 
     <div>
         <h3><br><br><br>When do you want to make this trip?</h3>
     </div>
+
+
 
   <div>
     <input type="text" id="daterange" name="daterange" value="06/01/2024 - 06/15/2024" size="21" />
@@ -150,13 +163,15 @@
     });
   });
   </script>
-  <h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
-  </div>
-
-  <div>
-        <a href="./reco2.html" class="btn btn-outline-success btn-space">Back</a>
-        <a href="./reco4.html" class="btn btn-outline-success btn-space">Next</a>
-  </div>
+  <h2><br><br><br><br></h2>
+  <h2><br><br><br><br></h2>
+  <h2><br><br><br><br></h2>
+</div>
+<div>
+  <a href="./reco2.html" class="btn btn-outline-success btn-space">Back</a>
+  <a href="./reco4.html" class="btn btn-outline-success btn-space">Next</a>
+</div>
+</div>
 
   <div class="footer">
     <div class="links-left"> 
@@ -182,3 +197,4 @@
     </div>
   </div>
   </body>
+  </html>

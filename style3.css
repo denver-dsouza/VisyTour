@@ -70,7 +70,7 @@ h2{
     line-height: 20px; 
     color: #000000;
     align-items: center;
-    text-align: center; 
+    text-align: left; 
 }
 
 h3{
@@ -93,7 +93,25 @@ h4{
     text-align: center; 
 }
 
+h6{
+    font: 'Nunito';
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px; 
+    color: #011c49;
+    align-items: center;
+    text-align: center; 
+}
 
+p{
+    font: 'Nunito';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px; 
+    color: #034370;
+    align-items: center;
+    text-align: center; 
+}
 
 .selectContainer{
 margin-left:90px;
@@ -235,4 +253,85 @@ margin-left:90px;
     line-height: 27.28px;
     color: #061A48;
     align-items: center;
+  }
+
+  .col-centered{
+    margin: 0 auto;
+    float: none;
+}
+
+.socialz, .icons-right {
+    display: flex;           /* Use flexbox to lay out the content inside */
+    flex-direction: row;  /* Stack content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center;     /* Align items in the center vertically */
+    font-family: 'Nunito';
+    padding-right: 3em;
+    padding-left: 15%;
+  }
+
+  .links-left {
+    width: 100%;             /* Make each links div take the full width */
+    display: flex;           /* Use flexbox to lay out the content inside */
+    flex-direction: column;  /* Stack content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: left;     /* Align items in the center vertically */
+    font-family: 'Nunito';
+    bottom: 0;
+    left: 0;
+  }
+
+  .links-center {
+    width: 100%;             /* Make each links div take the full width */
+    display: flex;           /* Use flexbox to lay out the content inside */
+    flex-direction: column;  /* Stack content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center;     /* Align items in the center vertically */
+    font-family: 'Nunito';
+  }
+
+  .links-right {
+    width: 100%;             /* Make each links div take the full width */
+    display: flex;           /* Use flexbox to lay out the content inside */
+    flex-direction: column;  /* Stack content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center;     /* Align items in the center vertically */
+    font-family: 'Nunito';
+    margin-right: 1 em;
+  }
+
+  .footer{
+    background-color: #FFFFFF;
+    position: absolute;
+    height: 50px;
+    margin-top: -50px;
+    bottom:5;
+    left: 99.5;
+    right: 1539.5;
+    display: flex;          /* Use flexbox to lay out the footer items */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    text-align: center;      /* Center text elements */
+    flex-direction: row;  /* Stack children vertically */
+    gap: 20px;               /* Optional: adds space between the children */
+    padding: 100px;           /* Optional: adds padding inside the footer */
+    font-family: 'Nunito';
+    flex-shrink: 0;
+    width: 100%;
+    border-top: 1px solid #8FC1D4;
+    border-bottom: 1px solid #8FC1D4;
+    border-left: 1px solid #8FC1D4;
+    border-right: 1px solid #8FC1D4;
+  }
+
+  img{
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+  }
+
+  container-fluid{
+    display: flex;          /* Use flexbox to lay out the footer items */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    flex-direction: row; 
   }
