@@ -10,30 +10,28 @@
      <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
      <link rel="stylesheet" type="text/css" href="./style.css">
      <script src="https://kit.fontawesome.com/63dea489fa.js" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <img src="./img/VisyTour Logo.png" class="img-fluid" alt="VisyTour Logo" height="72px" width="375px">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 push">
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Discover</a>
-        </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="Recommendation.html">Recommendation</a>
+          <a class="nav-link" href="./reco.html">Discover</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link" href="#">About Us</a>
         </li>
-        <!-- <li class="nav-item">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#">FAQ</a>
-        </li> -->
+        </li>
       </ul>
         <button id="loginButton" class="btn btn-outline-success btn-space" type="submit">Login<br></button>
-        <a href="./Recommendation.html" class="btn btn-outline-success btn-space">Create an Itinerary</a>
-        <!-- <button id="signupButton" class="btn btn-outline-success btn-space" type="submit">Register NOW!</button> -->
+        <button id="signupButton" class="btn btn-outline-success btn-space" type="submit">Register NOW!</button>
     </div>
   </div>
 </nav>
@@ -43,17 +41,15 @@
   <div class="popup-content">
       <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
-              Email Address
           </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="signupEmail" type="email" placeholder="Enter your email">
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="signupEmail" type="email" placeholder="Email">
       </div>
       <div class="mb-6">
           <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-              Password
           </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="signupPassword1" type="password" placeholder="Enter your password">
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="signupPassword2" type="password" placeholder="Confirm your password">
-          <p id="signupPasswordMismatch" class="text-start text-danger hidden" style="font-size: 22px;">Passwords do not match!</p>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="signupPassword1" type="password" placeholder="Password">
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="signupPassword2" type="password" placeholder="Confirm Password">
+          <!-- <p id="signupPasswordMismatch" class="text-start text-danger hidden" style="font-size: 22px;">Passwords do not match!</p> -->
       </div>
       <div class="flex justify-between">
           <button id="signupSubmit" class="btn btn-outline-success btn-space">
@@ -68,42 +64,14 @@
 
 <!-- Login Popup -->
 <div id="loginPopup" class="popup-container hidden">
-  <div class="bg-white p-6 rounded shadow-md popup-content">
-      <div class="mb-4">
-          <label class="text-muted font-weight-bold mb-2" for="email">
-              Email Address
-          </label>
-          <input class="form-control" id="loginEmail" type="email" placeholder="Enter your email">
-      </div>
-      <div class="mb-4">
-          <label class="text-muted font-weight-bold mb-2" for="password">
-              Password
-          </label>
-          <input class="form-control mb-3" id="loginPassword" type="password" placeholder="********">
-      </div>
-      <div class="d-flex justify-content-between">
-          <button id="loginSubmit" class="btn btn-outline-success">
-              Login
-          </button>
-          <button id="loginCloseButton" class="btn btn-outline-secondary">
-              Close
-          </button>
-      </div>
-  </div>
-</div>
-
-<!-- Login Popup
-<div id="loginPopup" class="popup-container hidden">
-  <div class="bg-white p-6 rounded shadow-md">
+  <div class="bg-white p-8 rounded shadow-md w-700">
       <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
-              Email Address
           </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="loginEmail" type="email" placeholder="Enter your email">
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="loginEmail" type="email" placeholder="Email">
       </div>
       <div class="mb-6">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-              Password
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="Password">
           </label>
           <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="loginPassword" type="password" placeholder="********">
       </div>
@@ -116,10 +84,10 @@
           </button>
       </div>
   </div>
-</div> -->
+</div>
 
-<div class="card text-bg-dark border border-white col-12">
-  <img src="./img/Beach.jpg" class="img-fluid full-width-img col-12" alt="Beach">
+<div class="card text-bg-dark border border-white" style="width: 120rem;">
+  <img src="./img/Beach.jpg" class="card-img-top-alt img-fluid" alt="Beach">
   <div class="card-img-overlay">
     <p class="card-text text-left"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;your travel companion in an app</p>
     <h1 class="card-title text-center" >Visytour</h1>
@@ -139,8 +107,8 @@
     <h2>Experience the World Your Way:</h2>
     <h2>Seamless Planning, Unforgettable Journeys</h2>
   </div>
-  <div class="col-12">
-    <img src="./img/EXPLORE.png" class="img-fluid full-width-img col-12" alt="Explore">
+  <div>
+    <img src="./img/EXPLORE.png" class="img-fluid" alt="Explore" width="1834px" height="546px">
   </div>
   <div>
     <h3>Welcome to Visytour: Your gateway to effortless travel planning and unforgettable</h3>
@@ -149,30 +117,31 @@
   </div>
 </div>
 
-
-  <div class="container1 row justify-content-center col-12">
+<div class="container">
+  <div class="row justify-content-start">
+<!-- card-img-top  -->
+  <div class="container1 row justify-content-center">
     <div class="col-4">
-      <img src="./img/Cabo.png" class="padding1 img-fluid" alt="Cabo" width="450px" height="493.62px"> 
+      <img class="img-fluid" src="./img/Cabo.png" class="padding1" alt="Cabo" width="450px" height="493.62px"> 
     </div>
     <div class="col-2">
-      <img src="./img/New York City.png" alt="New York City" class="img-fluid"> 
+      <img class="img-fluid" src="./img/New York City.png" alt="New York City"> 
     </div>
     <div class="col-2">
-      <img src="./img/Santa Monica.png" alt="Santa Monica" class="img-fluid"> 
+      <img class="img-fluid" src="./img/Santa Monica.png" alt="Santa Monica"> 
     </div>
     <div class="col-4">
-      <img src="./img/Welcome to Visytour.png" alt="Welcome to VisyTour" class="img-fluid"> 
+      <img class="img-fluid" src="./img/Welcome to Visytour.png" alt="Welcome to VisyTour"> 
     </div>
   </div>
 
-
-<div class="card text-bg-dark border border-white">
-  <img src="./img/Ocean.png" class="img-fluid full-width-img col-12" alt="Ocean"> 
+<div class="card text-bg-dark border border-white" style="width: 119rem;">
+  <img class="img-fluid" src="./img/Ocean.png" class="card-img-top-alt" alt="Ocean"> 
 </div>
 
 <div class="footer">
   <div class="links-left"> 
-    <img src="./img/VisyTour Logo.png" height="74px" width="375px" class="img-fluid">
+    <img class="img-fluid" src="./img/VisyTour Logo.png" height="74px" width="375px">
   </div>
   <div class="links-center">
     <h4>Want to work with us?</h4>
