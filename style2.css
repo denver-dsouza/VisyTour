@@ -113,15 +113,15 @@ p{
     text-align: center; 
 }
 
-.footer{
+#footer{
     background-color: #FFFFFF;
-    position: fixed;
-    height: 50px;
-    margin-top: -50px;
-    bottom: 5;
-    left: 99.5;
-    right: 1539.5;
-    display: flex;          /* Use flexbox to lay out the footer items*/
+    position: absolute;
+    height: 2.5rem;
+    margin-top: 50px; 
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    display: flex;          
     justify-content: center; /*Center horizontally */
     align-items: center;     /* Center vertically */
     text-align: center;      /* Center text elements */
@@ -171,14 +171,14 @@ p{
     width: auto; */
 
 }
-.divcell{
+/* .divcell{
     position: relative;
     display: inline-block;
     margin: 10px;
 }
 .divcell img{
     display: block;
-}
+} */
 
 .socialz, .icons-right {
     display: flex;           /* Use flexbox to lay out the content inside */
@@ -229,3 +229,13 @@ p{
 .content{
     flex: 1;
 }
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+

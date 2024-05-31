@@ -33,6 +33,8 @@
     </style>
 </head>
 <body>
+  <div id="page-container">
+  <div id="content-wrap">
   <nav class="navbar navbar-expand-lg bg-body-tertiary mw-100">
     <img src="./img/VisyTour Logo.png" class="img-fluid" alt="VisyTour Logo" height="72px" width="375px">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -104,13 +106,13 @@
         img.style.width = "276px";
         img.style.height = "221px";
         img.style.margin = "10px";
-        // img.addEventListener('click', function() {
-        //   if (img.style.border === "2px solid blue") {
-        //     img.style.border = "none";
-        //     return;
-        //   }
-        //   img.style.border = "2px solid blue";
-        // });
+        img.addEventListener('click', function() {
+          if (img.style.border === "2px solid blue") {
+            img.style.border = "none";
+            return;
+          }
+          img.style.border = "2px solid blue";
+        });
 
         newDiv.appendChild(img);
 
@@ -128,15 +130,14 @@
         document.getElementById('imgContainer').appendChild(newDiv);
 
         // create a checkbox on top of the image
-        let checkbox = document.createElement("input");
-        checkbox.type = "checkbox";
-        // checkbox.style.margin = "5px";
-        //position the checkbox on top of the image
-        checkbox.style.position = "absolute";
-        checkbox.style.top = "20px";  // get the top position of the image
-        checkbox.style.right = "20px"; // get the left position of the image
-        newDiv.append(checkbox);
-        document.getElementById('imgContainer').appendChild(newDiv);
+        // let checkbox = document.createElement("input");
+        // checkbox.type = "checkbox";
+        // //position the checkbox on top of the image
+        // checkbox.style.position = "absolute";
+        // checkbox.style.top = "10px";  // get the top position of the image
+        // checkbox.style.right = "10px"; // get the left position of the image
+        // newDiv.append(checkbox);
+        // document.getElementById('imgContainer').appendChild(newDiv);
 
 }
      </script>
@@ -145,7 +146,7 @@
         <h3><br><br><br>When do you want to make this trip?</h3>
     </div>
 
-
+   
 
   <div>
     <input type="text" id="daterange" name="daterange" value="06/01/2024 - 06/15/2024" size="21" />
@@ -163,17 +164,17 @@
     });
   });
   </script>
-  <h2><br><br><br><br></h2>
-  <h2><br><br><br><br></h2>
-  <h2><br><br><br><br></h2>
+
 </div>
-<div>
-  <a href="./reco2.html" class="btn btn-outline-success btn-space">Back</a>
-  <a href="./reco4.html" class="btn btn-outline-success btn-space">Next</a>
+<div class="">
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <a href="./reco2.html" class="btn btn-outline-success btn-space ">Back</a>
+  <a href="./reco4.html" class="btn btn-outline-success btn-space ">Next</a>
 </div>
 </div>
 
-  <div class="footer">
+<!-- <div>
+  <footer id="footer">
     <div class="links-left"> 
       <img class="img-fluid" src="./img/VisyTour Logo.png" height="74px" width="375px">
     </div>
@@ -195,6 +196,7 @@
       </ul>
       <p><br><br>&copy; 2024 VisyTour, Inc. All rights reserved.</p>
     </div>
-  </div>
+  </footer>
+</div> -->
   </body>
   </html>
